@@ -1,21 +1,69 @@
-# Terminal-Based To-Do List
+# Niko’s File Organizer — Emerald Edition 💚
 
-A simple Python terminal application to manage your daily tasks. This project allows you to **add, view, remove, and clear tasks** directly from the terminal.
+A modern desktop **file organization tool** built with **Python** and **CustomTkinter**.  
+This application scans a selected directory and automatically sorts files into clean, categorized folders based on file type — all through a sleek, emerald-themed GUI.
 
-## Features
+---
 
-- Add a task to your to-do list
-- View all tasks in the list
-- Remove a specific task by number
-- Clear all tasks
-- Exit the program
+## ✨ Features
 
-## How to Use
+- 📁 **Automatic File Sorting**
+- 🧠 **Smart File Type Detection**
+- ⚡ **Multithreaded Processing** (UI never freezes)
+- 📊 **Live Progress Bar**
+- 📝 **Real-time Status Logs**
+- 🟢 **Custom Emerald-Themed Interface**
+- 🛡️ **Duplicate File Protection**
+- ❌ Skips hidden/system files
 
-1. Clone the repository or download `to-do-list.py`.
-2. Open a terminal and navigate to the folder containing `to-do-list.py`.
-3. Run the program:
+---
 
+## 🗂️ File Categories
+
+Files are automatically sorted into the following folders:
+
+| Category | File Types |
+|--------|-----------|
+| Images | `.jpg`, `.png`, `.gif`, `.svg`, `.webp`, etc. |
+| Documents | `.pdf`, `.docx`, `.txt`, `.csv`, `.xlsx`, `.md` |
+| Videos | `.mp4`, `.mov`, `.avi`, `.mkv` |
+| Music | `.mp3`, `.wav`, `.flac`, `.m4a` |
+| Archives | `.zip`, `.rar`, `.7z`, `.tar`, `.gz` |
+| Code | `.py`, `.js`, `.html`, `.css`, `.cpp`, `.java`, `.json` |
+| Executables | `.exe`, `.msi`, `.dmg`, `.sh` |
+| Others | Files that don’t match any category |
+
+---
+
+## 🖥️ Interface Preview
+
+- Emerald green accent colors  
+- Fixedsys & Consolas fonts  
+- Dark mode UI  
+- Terminal-style logging panel  
+
+---
+
+## 🚀 How It Works
+
+1. Launch the application
+2. Click **“SELECT YOUR TARGETTED DIRECTORY”**
+3. Choose a folder you want to organize
+4. The app:
+   - Scans all files
+   - Creates folders automatically
+   - Moves files based on extension
+   - Renames duplicates safely
+5. Done. Clean directory.
+
+---
+
+## 🔧 Installation
+
+### Requirements
+- Python **3.9+**
+- Windows / macOS / Linux
+
+### Install Dependencies
 ```bash
-python to-do-list.py
-****
+pip install customtkinter
